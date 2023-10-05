@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 연습</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>개인 정보 입력</legend>
+            <label for="city">지역</label>
+            <select name="city" id="city">
+                <option value="강북구">강북구</option>
+                <option value="강남구">강남구</option>
+                <option value="서초구">서초구</option>
+                <option value="중원구">중원구</option>
+                <option value="분당구">분당구</option>
+            </select>
+            <input type="submit" value="등록">
+        </fieldset>
+
+        <fieldset>
+            <legend>개인 정보 입력</legend>
+            <label for="city">지역</label>
+            <select name="city" id="city">
+                <optgroup label="서울시">
+                <option value="강북구">강북구</option>
+                <option value="강남구">강남구</option>
+                <option value="서초구">서초구</option>
+            </optgroup>
+            <optgroup label="경기도 성남시">
+                <option value="중원구" selected>중원구</option>
+                <option value="분당구">분당구</option>
+            </optgroup>
+            </select>
+            <input type="submit" value="등록">
+        </fieldset>
+
+        <fieldset>
+            <legend>개인 정보 입력</legend>
+              <label for="city">지역</label>
+              <select name="city" id="city" size="3">
+                <option value="강북구">강북구</option>
+                <option value="강남구">강남구</option>
+                <option value="서초구">서초구</option>
+                <option value="중원구">중원구</option>
+                <option value="분당구">분당구</option>
+              </select>
+              <input type="submit" value="등록">
+          </fieldset>
+
+          <button type="submit">
+            <img src="../images/facebook.png" alt="페이스북 버튼">
+            페이스북에 등록하기기
+          </button>
+
+
+
+          <fieldset>
+            <legend>좋아하는 과일</legend>
+            <input type="checkbox" id="banana" name="banana" value="banana">
+            <label for="banana">banana</label>
+            <input type="checkbox" id="apple" name="apple" value="apple">
+            <label for="apple">apple</label>
+            <input type="checkbox" id="orange" name="orange" value="orange">
+            <label for="orange">orange</label>
+            
+          </fieldset>
+
+
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제2</title>
+    <style>
+        .container {
+            width: 85%;
+            margin: 0; auto;
+            padding: 15px 40px;
+            background-color: aliceblue;
+            border: 1px solid black;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0,0.1);
+        }
+
+        label {
+            width: 60px;
+            display: inline-block;
+            margin-right: 2px;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        .left-padding {
+            padding-left: 25px;
+        }
+
+        .detail {
+            margin: 4px 26px;
+            white-space: nowrap;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><b>프론트앤드 개발자 지원서</b></h1>
+
+        <p>HTML,CSS,Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+        <hr>
+
+        <h4>개인정보</h4>
+         <div class="left-padding">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name">
+            </div>
+
+            <div class="left-padding">
+                <label for="phone">연락처</label>
+                <input type="number" id="phone" name="phone">
+                    </div>  
+
+         <h4>지원 분야</h4> 
+           <div class="left-padding, detail">
+             <input type="radio" id="web" name="web">
+             <label for="web">웹 퍼블리싱</label>
+           </div>
+
+           <div class="left-padding, detail">
+            <input type="radio" id="front" name="front">
+            <label for="front">웹 프론트앤드</label>
+          </div>
+
+          <div class="left-padding, detail">
+            <input type="radio" id="mobile" name="mobile">
+            <label for="mobile">모바일 앱</label>
+          </div>
+
+
+          <h4>지원동기</h4>
+          <textarea id="desc" cols="70" rows="5" readonly></textarea>
+
+          <div>
+            <button type="submit">접수하기</button>
+            <button type="reset">다시쓰기</button>
+          </div>
+
+    </div>
+</body>
+</html>
