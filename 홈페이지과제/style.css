@@ -1,0 +1,102 @@
+
+/* Reset some default styles for the body and header */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+
+ .container {
+    background-image: url(./image/실거래가사진.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* 배경 이미지를 화면에 가득 채우도록 설정 */
+    filter: grayscale(100%);
+    opacity: 1;
+    height: 900px;
+    width: 100%; /* 너비를 100%로 설정하여 화면 크기에 맞게 반응하도록 함 */
+}
+
+
+ 
+
+/* Header styles */
+.full {
+    background-color: #fff;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 20 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px; 
+    margin-bottom: -10px;
+
+}
+
+menu-left{
+    display: flex inline;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+}
+
+menu-ul {
+    padding-left: 50px;
+    margin-right: 18px;
+    text-align: left;
+    display: flex inline;
+    justify-content: space-between;
+}
+
+menu-ul a {
+    margin-right: 30px;
+    font-size: 15px;
+    word-break: keep-all;
+    color: #222;
+    
+}
+
+.user-menu a {
+    margin-right: 15px;
+    font-size: 13px;
+    
+    word-break: keep-all;
+    color: #222;
+   
+}
+
+menu-ul a,
+.user-menu a {
+    text-decoration: none;}
+
+.clfix a + a::before {
+    content: "|"; /* 가상 요소의 내용 설정 */
+    margin: 0 30px; /* 수직 막대 양쪽에 여백 설정 (원하는 크기로 조정) */
+}
+
+
+.button-bar {
+    padding-left: 15px;
+}
+
+.custom-button {
+    padding-left: 15px;
+    border: 1px solid #222;
+    border-radius: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    padding: 8px 18px;
+    margin-right: 10px;
+}
+
+.custom-button:hover{
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+
