@@ -1,48 +1,68 @@
 
 /* Reset some default styles for the body and header */
-body {
+#container {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif; 
+    width: 1920px;
+    height: 1912px;
 }
 
- .container {
-    background-image: url(./image/실거래가사진.jpg);
+
+
+.background {
+    background-color: rgba(0,0,0,0.1);
+    background-image: url(image/개인프로젝트배경01.jpg);
     background-repeat: no-repeat;
-    background-size: cover; /* 배경 이미지를 화면에 가득 채우도록 설정 */
-    filter: grayscale(100%);
-    opacity: 1;
-    height: 900px;
-    width: 100%; /* 너비를 100%로 설정하여 화면 크기에 맞게 반응하도록 함 */
-}
+    width: 2000px;
+    height: 1160px;
+    display: flex;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+} 
 
-
- 
-
-/* Header styles */
-.full {
-    background-color: #fff;
+.header {
+    /* background-color: rgba(255,255,255,0.1); */
     border-bottom: 1px solid #e1e1e1;
-    padding: 20 30px;
+    padding: 20px 30px;
+    width: 98vw;
+    height: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -10px; 
-    margin-bottom: -10px;
-
+    margin-top: 0px; 
+    position: absolute;
+    z-index: 2;
 }
+/* Header styles */
 
-menu-left{
-    display: flex inline;
+
+.menu-left{
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 10px;
-    margin-right: 10px;
-    
-
+    margin-right: 10px;     
 }
 
-menu-ul {
+i{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.hide_txt{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.menu-ul {
     padding-left: 50px;
     margin-right: 18px;
     text-align: left;
@@ -50,24 +70,25 @@ menu-ul {
     justify-content: space-between;
 }
 
-menu-ul a {
+.menu-ul a {
     margin-right: 30px;
-    font-size: 15px;
+    font-size: 18px;
+    font-family: 'Nanum Pen Script', cursive;
     word-break: keep-all;
-    color: #222;
+    color: white;
     
 }
 
 .user-menu a {
     margin-right: 15px;
-    font-size: 13px;
-    
+    font-size: 15px;
+    font-family: 'Nanum Pen Script', cursive;
     word-break: keep-all;
-    color: #222;
+    color: white;
    
 }
 
-menu-ul a,
+.menu-ul a,
 .user-menu a {
     text-decoration: none;}
 
@@ -96,6 +117,49 @@ menu-ul a,
 .custom-button:hover{
     background-color: #007bff;
     color: #fff;
+}
+
+
+
+.main_search_area {
+    overflow: hidden;
+    width: 1080px;
+    height: 890px;
+    position: absolute;
+    z-index: 3;
+}
+
+.serach_bar{
+    width: 850px;
+    height: 220px;
+    position: absolute;
+    left: 120px;
+    top: 0px;
+}
+
+.search_select_ui {
+    background-color:rgba(255, 255, 255, 0.20000000298023224);
+	width:850px;
+	height:70px;
+	position:absolute;
+	left:0px;
+	top:150px;
+	border-top-left-radius:35px;
+	border-top-right-radius:35px;
+	border-bottom-left-radius:35px;
+	border-bottom-right-radius:35px;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        width: 100%; /* 컨테이너 폭을 100%로 변경 */
+    }
+
+    .header {
+        width: 100%; /* 헤더 폭을 100%로 변경 */
+    }
+
+    /* 기타 요소들의 스타일 변경을 추가 */
 }
 
 
