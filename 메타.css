@@ -1,0 +1,49 @@
+@media screen and (max-width: 768px) {
+    #container {
+        width: 100%; /* 컨테이너 폭을 100%로 변경 */
+    }
+
+    .header {
+        width: 100%; /* 헤더 폭을 100%로 변경 */
+        flex-direction: column;
+        align-items: flex-start;
+        padding:  8px 24px;
+    }
+
+    .menu-left h1{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        width: 100%;     
+    }
+
+    .menu-ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .menu-ul a {
+        margin-right: 30px;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        font-family: 'Nanum Pen Script', cursive;
+        word-break: keep-all;
+        color: white;
+        
+    }
+
+    .user-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu__toogleBtn {
+        display: block;
+    }
+
+}

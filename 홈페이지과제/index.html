@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/홈페이지과제/style.css">
     <script src="https://kit.fontawesome.com/628ec7e948.js" crossorigin="anonymous"></script>
 	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 	</style>
     
 
@@ -45,7 +45,7 @@
 					<a href="#" class="j_zone custom-button"><span>중개회원 가입</span></a>
 					<a href="#" data-source="gnb_menu" class="tp_premium custom-button"><span>이용권 구매</span></a>
                     </span>
-				</menu-1>					
+				</menu-1>				
     		</div>
 
 			<div class="main_visual_full">
@@ -53,11 +53,32 @@
 					<div class="main_search_area">
 						<div class="serach_bar">
 							<div class="search_select_ui">
-								<a href="#" class="sel this">실거래가</a>
-								<!-- <a href="#" class="sel this">주거용</a>
-								<a href="#" class="sel this">상업용</a>
-								<a href="#" class="sel this">입주기업정보</a> -->
+								<a href="#" class="sel_this">실거래가</a>
+								<div class="select_menu" id="select">
+									<div class="selected_menu">
+										<a href="#" class="topon" data-vi="real"><b>실거래가</b></a>
+										<a href="#" data-vi="home"><b>주거용</b></a>
+										<a href="#" data-vi="business"><b>상업용</b></a>
+										<a href="#" data-vi="info"><b>입주기업정보</b></a>
+									</div>
+								</div>
 							</div>
+								<div class="input">
+									<div class="input__box">
+										<div class="input__info">
+											<input type="text" name="search keyword"
+											placeholder="지역,지하철,건물명,학교명으로 검색하세요." class="input_keyword">
+										</div>
+								
+											<a href="#" class="enter" id="searchent">
+												<i class="fa-solid fa-magnifying-glass"></i>
+										</a>
+									
+									</div>
+
+								</div>
+							</div>
+							
 						</div>
 					</div>
 				</div>
