@@ -11,7 +11,7 @@
     padding: 0;
     font-family: Arial, sans-serif; 
     width: 1920px;
-    height: 1912px;
+    height: 1730px;
 }
 
 
@@ -21,7 +21,7 @@
     background-image: url(image/개인프로젝트배경01.jpg);
     background-repeat: no-repeat;
     width: 2000px;
-    height: 1160px;
+    height: 110vh;
     display: flex;
     background-size: cover;
     position: absolute;
@@ -288,9 +288,19 @@ i{
     transition: transform 0.3s;
 }
 
+    @keyframes iconTransition {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(1.2);
+    }
+        }
+
+
 .enter:hover{
-    transform: scaleX(1.2);
-    transition: transform 0.1s;
+    transform-origin: right center;
+    animation: iconTransition 0.55s linear forwards;
     /* transform-origin: right; */
 }
 /* 
